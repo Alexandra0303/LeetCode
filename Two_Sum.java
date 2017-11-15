@@ -19,7 +19,7 @@ public class Two_Sum {
 		for(int i=0;i<nums.length;i++){
 			if(numMap.containsKey(target-nums[i])){
 				result[1] = i;
-			result[0] = numMap.get(target - nums[i]);
+				result[0] = numMap.get(target - nums[i]);
 				return result;
 			}else
 				numMap.put(nums[i], i);
